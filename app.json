@@ -1,0 +1,51 @@
+{
+  "name": "ProyGenBot Bot",
+  "description": "A simple ProxyGenBot bot made with Python [Telethon].",
+  "logo": "https://telegra.ph/file/48587d583a2989baf1917.jpg",
+  "keywords": [
+    "telegram",
+    "Proxy",
+    "plugins",
+    "telegram-bot",
+    "productivity",
+    "Bot"
+  ],
+  "repository": "https://github.com/TgxBotz/ProxyGenBot",
+  "website": "https://github.com/TgxBotz/ProxyGenBot",
+  "success_url": "t.me/TgxBots",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "LOGS_CHAT": {
+      "description": "Your Group Rules",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
